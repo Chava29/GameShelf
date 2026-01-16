@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GameShelf"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <!-- Subtítulo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tu biblioteca personal de videojuegos"
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:paddingBottom="14dp" />
+
+        <!-- Bloque imagen + título (en fila) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Fila: imagen + título -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imagenBienvenida"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bienvenido a GameShelf"
+                    android:textStyle="bold"
+                    android:textSize="19sp"
+                    android:textColor="@android:color/black"
+                    android:paddingTop="6dp" />
+            </LinearLayout>
+
+            <!-- Texto largo (ocupa TODO el ancho) -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="GameShelf es una aplicación Android diseñada para administrar tu colección personal de videojuegos.\n\nPermite registrar, visualizar, editar y eliminar videojuegos de manera sencilla, organizándolos por género y mostrando información relevante como plataforma, estado, horas jugadas y precio.\n\nLa aplicación utiliza una base de datos local (SQLite) y está desarrollada con fragmentos y un menú de navegación para facilitar su uso."
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:lineSpacingExtra="3dp" />
+
+    </LinearLayout>
+
+        <!-- Funciones -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Funciones principales:\n• Registro de videojuegos\n• Listado dinámico desde base de datos\n• Vista de detalle\n• Edición y eliminación\n• Portadas por género"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:lineSpacingExtra="2dp" />
+
+        <!-- Datos -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\nMateria: Aplicaciones Móviles\nAlumno: Chávez Núñez Salvador\nGrupo: 5IM8\nVersión: 1.2"
+            android:textColor="#555555"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+</ScrollView>

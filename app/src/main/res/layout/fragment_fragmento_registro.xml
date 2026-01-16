@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- ID -->
+        <EditText
+            android:id="@+id/etIdJuego"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID del juego (número)"
+            android:inputType="number" />
+
+        <!-- Título -->
+        <EditText
+            android:id="@+id/etTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título"
+            android:inputType="textPersonName" />
+
+        <!-- Plataforma -->
+        <EditText
+            android:id="@+id/etPlataforma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Plataforma (PS5, Xbox, PC, Switch)"
+            android:inputType="text" />
+
+        <!-- Género -->
+        <EditText
+            android:id="@+id/etGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Género (Acción, RPG, Terror, etc.)"
+            android:inputType="text" />
+
+        <!-- Estado -->
+        <EditText
+            android:id="@+id/etEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Estado (Pendiente / Jugando / Terminado)"
+            android:inputType="text" />
+
+        <!-- Precio -->
+        <EditText
+            android:id="@+id/etPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio (MXN)"
+            android:inputType="number" />
+
+        <!-- Horas -->
+        <EditText
+            android:id="@+id/etHoras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Horas jugadas"
+            android:inputType="number" />
+
+        <!-- Portada (1-5) -->
+        <EditText
+            android:id="@+id/etPortada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Portada (1 a 5)"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/AyudaPortadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1--Acción, 2--RPG, 3--Deportes, 4--Aventura, 5--Battle Royale"
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:paddingTop="8dp"
+            android:paddingBottom="10dp" />
+
+
+        <!-- Botones CRUD -->
+        <Button
+            android:id="@+id/btnAlta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alta"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnBaja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Baja"
+            android:layout_marginTop="6dp" />
+
+        <Button
+            android:id="@+id/btnCambio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cambio (Editar)"
+            android:layout_marginTop="6dp" />
+
+        <Button
+            android:id="@+id/btnConsulta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consulta"
+            android:layout_marginTop="6dp" />
+
+        <!-- Resultado -->
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado..."
+            android:paddingTop="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>

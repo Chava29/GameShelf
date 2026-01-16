@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_inicio"
+        android:title="@string/menu_inicio" />
+    <item
+        android:id="@+id/nav_videojuegos"
+        android:title="@string/menu_videojuegos" />
+    <item
+        android:id="@+id/nav_registro"
+        android:title="@string/menu_registro" />
+
+    <item
+        android:id="@+id/holis"
+        android:title=""/>
+</menu>
